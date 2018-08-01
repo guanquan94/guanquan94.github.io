@@ -344,3 +344,12 @@ figure.effect:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+
+
+
+
+/*Guan Quan */
+.profile-picture{
+  border: 10px solid #F3EFE0;
+  border-radius: 50%;
+}
