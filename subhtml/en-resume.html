@@ -957,52 +957,57 @@
 			<div id="contact" class="container">
 				<h2>Contact</h2>
 <p class="lead">
-	&ldquo;If I had asked people what they wanted, they would have said faster horses. &rdquo;<br />- Henry Ford
+	Keeping in Touch
 </p>
 
 <hr />
 
-<div class="row">
-	<div class="col-md-6">
-		<ul class="no-bullets">
-			<li>
-				<a href="http://twitter.com/pascalvgemert" target="_blank">
-					<span class="icon icon-twitter"></span>
-					http://twitter.com/pascalvgemert				</a>
-			</li>
-			<li>
-				<a href="http://linkedin.nl/in/pascalvgemert/" target="_blank">
-					<span class="icon icon-linkedin"></span>
-					http://linkedin.nl/in/pascalvgemert/				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="col-md-6">
-		<ul class="no-bullets">
-			<!--<li>
-				<a href="javascript:void(0);">
-					<span class="icon icon-skype"></span>
-					pascalvgemert				</a>
-			</li>-->
-			<li>
-				<a href="mailto:ln.tremegnavlacsap@lacsap">
-					<span class="icon icon-email"></span>
-					<span style="unicode-bidi:bidi-override; direction: rtl;">
-						ln.tremegnavlacsap@lacsap					</span>
-				</a>
-			</li>
-		</ul>
-	</div>
-</div>
+   <div id="map"></div>
 
 <hr />
 
-<div class="text-center">
-	<iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.c633b87376883931e7436b93bb46a699.en.html#_=1452458429192&amp;dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;original_referer=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3AcRExpd3vwGsJ%3Awww.pascalvangemert.nl%2F%2B%26cd%3D1%26hl%3Den%26ct%3Dclnk%26gl%3Dnl%26lr%3Dlang_nl%257Clang_en&amp;size=m&amp;text=Pascal%20van%20Gemert%20-%20Web%20Developer%20-%20Interactive%20Resume&amp;type=share&amp;url=http%3A%2F%2Fpascalvangemert.nl%2F%3Fref%3Dtwitter&amp;via=pascalvgemert" style="position: static; visibility: visible; width: 62px; height: 20px;" data-url="http://pascalvangemert.nl/?ref=twitter"></iframe>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fpascalvangemert.nl%3Fref%3Dfacebook&amp;width=120&amp;height=21&amp;colorscheme=dark&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=143175172374579" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowtransparency="true"></iframe>
-</div>			</div>
+<div class="row">
+    <div class="col-md-6">
+        <ul class="no-bullets">
+
+            <li>
+                <a href="https://www.linkedin.com/in/tanguanquan/" target="_blank">
+                    <i class="fa fa-linkedin-square"></i>
+                    https://www.linkedin.com/in/tanguanquan/              </a>
+            </li>
+            <li>
+                <a href="https://github.com/guanquan94" target="_blank">
+                    <i class="fa fa-github-square"></i>
+                    https://github.com/guanquan94              </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <ul class="no-bullets">
+            <!--<li>
+                <a href="javascript:void(0);">
+                    <span class="icon icon-skype"></span>
+                    pascalvgemert               </a>
+            </li>-->
+            <li>
+                <a href="mailto:ude.sun.u@nauqnaug">
+                    <i class="fa fa-envelope-square"></i>
+                    <span style="unicode-bidi:bidi-override; direction: rtl;">
+                        ude.sun.u@nauqnaug                   </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/guanquan94" target="_blank">
+                    <i class="fa fa-facebook-square"></i>
+                    https://www.facebook.com/guanquan94              </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<hr />
+		</div>
 		</div>
 		
 		<div class="modal fade" id="upgrade-dialog" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1037,5 +1042,107 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 		</script>
+
+
+		 <!-- Google Maps -->
+        <script>
+            function initMap() {
+            var uluru = {lat: 1.292577, lng: 103.774171};
+            var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 17,
+            center: uluru,
+            styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+
+            });
+            var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+            });
+            }
+        </script>
+
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSi8L1DdpNPJ3Sl3bFly_yRz6nfPE0qq0&callback=initMap">
+        </script>
+
 	</body>
 </html>
