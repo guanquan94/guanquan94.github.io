@@ -362,3 +362,24 @@ figure.effect:hover p {
   top: 30px;
   left: 30px;
 }
+
+#map{
+  position: relative;
+  height: 400px;
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  z-index: -0.9;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
