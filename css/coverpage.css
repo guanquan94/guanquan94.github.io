@@ -11,7 +11,9 @@ body{
 .mainpage{
 	margin: 0px;
 	padding: 0px;  	
-	background: url(/images/background2.jpg) no-repeat center center fixed; 
+	background: 
+	linear-gradient(rgba(34, 163, 159, 0.75), rgba(34, 163, 159, 0.75)), 
+	url(/images/background2.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -19,6 +21,16 @@ body{
   	margin: 0;
 	padding: 0;
 	width: 100%;
+}
+
+.mainpage:after{
+	content: '';
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	top: 0;
+	left: 0;
+	background: rgba(255, 0, 92, 0.7);
 }
 
 h1{
