@@ -355,7 +355,7 @@ figure.effect:hover p {
 }
 
 .iconname{
-  position: fixed;
+  position: absolute;
   height: 40px;
   width: 40px;
   z-index: 5;
